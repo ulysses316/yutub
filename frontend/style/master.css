@@ -31,3 +31,17 @@ a, a:hover{
     object-fit: cover;
 }
 
+.size-comment{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .size-comment{
+        width: 15%;
+    }   
+
+
+    .image-comment{
+        width: 100%;
+    }
+}
