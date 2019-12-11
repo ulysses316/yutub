@@ -1,0 +1,47 @@
+.container{
+    width: 95%;
+}
+
+.center-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 111px;
+    padding-right: 0 !important;
+}
+
+em{
+    font-weight: lighter;
+}
+
+a, a:hover{
+    color: black;
+}
+
+.margin-video{
+    margin-top: 15px;
+}
+
+.imagen-video{
+    height: 133px;
+}
+.imagen-video img{
+    width: 100%;
+    height: 97%;
+    object-fit: cover;
+}
+
+.size-comment{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .size-comment{
+        width: 15%;
+    }   
+
+
+    .image-comment{
+        width: 100%;
+    }
+}

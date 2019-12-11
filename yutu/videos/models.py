@@ -10,7 +10,7 @@ class Videos(models.Model):
     rated = models.BooleanField(default = False)
     date = models.DateTimeField(auto_now_add= True)
     video = models.FileField(upload_to='uploads/videos/%Y/%m/%d/', default='default.mp3')
-
+    user = models.ForeignKey(Users, on_delete=models.CASCADE, null = True)
 
     def __str__(self):
         return self.name

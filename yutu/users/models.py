@@ -13,6 +13,6 @@ class Users(User, models.Model):
     date_joined = User.date_joined
     age = models.DateField(auto_now=True)
     image_profile = models.ImageField(upload_to='uploads/image_profile', blank=True, default='default.jpeg')
-    
+
     def __str__(self):
         return self.username
