@@ -3,7 +3,6 @@ from users.models import Users
 
 class UserForm(forms.ModelForm):
 
-
     class Meta:
         model = Users
         fields = [
@@ -28,10 +27,10 @@ class UserForm(forms.ModelForm):
 
         widgets = {
             "username": forms.TextInput(attrs={'class':"input-field"}),
-            "password": forms.TextInput(attrs={'class':"input-field"}),
+            "password": forms.PasswordInput(),
             "email": forms.EmailInput(attrs={'class':"input-field"}),
             "first_name": forms.TextInput(attrs={'class':"input-field"}),
             "last_name": forms.TextInput(attrs={'class':"input-field"}),
            # "age": forms.DateInput(attrs={'class':"input-field"}),
-            "image_profile": forms.ClearableFileInput(attrs={'class':"input-field"})
+            "image_profile": forms.ClearableFileInput(attrs={'class':["file-path","validate"]})
         }
